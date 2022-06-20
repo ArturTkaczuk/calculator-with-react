@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+#app {
+  background-color: #333;
+  border: 1px solid black;
+  font-size: 1.5rem;
+  padding: 10px;
+}
+
+#display {
+  color: rgb(236, 236, 236);
+  background-color: rgb(111, 136, 95);
+  padding: 10px;
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#display input {
+  text-align: right;
+  background-color: transparent;
+  border: none;
+  font-size: 1.5rem;
+  color: white;
+}
+
+#display input::placeholder {
+  color: white;
+}
+
+#buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 90px);
+  grid-template-rows: repeat(5, 70px);
+  grid-template-areas:
+    "AC     AC     divide   multiply"
+    "seven  eight  nine     minus"
+    "four   five   six      plus"
+    "one    two    three    equals"
+    "zero   zero   comma    equals";
+  gap: 5px;
+  margin-top: 20px;
+  user-select: none;
+}
+
+#buttons > * {
+  background-color: lightgrey;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+#buttons > *:hover {
+  border: 2px white solid;
+}
+
+/** INDIVIDUAL BUTTONS STYLES */
+.ac {
+  grid-area: AC;
+  background-color: rgb(255, 98, 98) !important;
+}
+
+.seven {
+  grid-area: seven;
+}
+
+.eight {
+  grid-area: eight;
+}
+
+.nine {
+  grid-area: nine;
+}
+
+.four {
+  grid-area: four;
+}
+
+.five {
+  grid-area: five;
+}
+
+.six {
+  grid-area: six;
+}
+
+.multiply {
+  grid-area: multiply;
+  background-color: lightblue !important;
+}
+
+.divide {
+  grid-area: divide;
+  background-color: lightblue !important;
+}
+
+.one {
+  grid-area: one;
+}
+
+.two {
+  grid-area: two;
+}
+
+.three {
+  grid-area: three;
+}
+
+.plus {
+  grid-area: plus;
+  background-color: lightblue !important;
+}
+
+.minus {
+  grid-area: minus;
+  background-color: lightblue !important;
+}
+
+.zero {
+  grid-area: zero;
+}
+
+.comma {
+  grid-area: comma;
+}
+
+.equals {
+  grid-area: equals;
+  background-color: lightskyblue !important;
+}
