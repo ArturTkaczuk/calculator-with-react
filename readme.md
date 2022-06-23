@@ -1,4 +1,4 @@
-# Insect game
+# Calculator with react
 
 Basic calculator made in React to learn coding. Check it [Live here](https://calculator-with-react-at.netlify.app/)
 
