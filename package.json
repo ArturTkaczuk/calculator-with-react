@@ -1,0 +1,25 @@
+{
+  "name": "calculator-with-react",
+  "version": "1.0.0",
+  "description": "Basic calculator made in React to learn coding. Check it [Live here](https://calculator-with-react-at.netlify.app/)",
+  "main": "index.js",
+  "scripts": {
+    "build:prod": "npx babel src --out-dir dist --presets react-app/prod",
+    "watch:prod": "npx babel --watch src --out-dir dist --presets react-app/prod"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArturTkaczuk/calculator-with-react.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ArturTkaczuk/calculator-with-react/issues"
+  },
+  "homepage": "https://github.com/ArturTkaczuk/calculator-with-react#readme",
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-react-app": "^3.1.2"
+  }
+}
